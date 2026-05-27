@@ -1,6 +1,5 @@
 package kz.kbtu.models;
 
-import kz.kbtu.common.generators.IdGenerator;
 import kz.kbtu.enums.BestOf;
 import kz.kbtu.enums.MapPool;
 import kz.kbtu.enums.StageOfTournament;

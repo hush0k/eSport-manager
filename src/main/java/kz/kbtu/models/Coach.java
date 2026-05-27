@@ -1,6 +1,5 @@
 package kz.kbtu.models;
 
-import kz.kbtu.common.generators.IdGenerator;
 import kz.kbtu.enums.CountryCode;
 import kz.kbtu.enums.Gender;
 import lombok.*;

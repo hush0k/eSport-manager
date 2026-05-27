@@ -6,8 +6,6 @@ import lombok.*;
 @Setter
 @ToString
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class Economy {
     private int transferMoney;
     private int monthlyBudget;

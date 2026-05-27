@@ -9,6 +9,7 @@ import java.util.Map;
 
 
 @Getter
+@Setter
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString

@@ -16,7 +16,6 @@ public class Team {
     private String id;
 
     private String name;
-    private String surname;
     private String slug;
     private String logotype;
     private int points;

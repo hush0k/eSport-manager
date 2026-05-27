@@ -256,9 +256,9 @@ public enum CountryCode {
     ZM("Zambia"),
     ZW("Zimbabwe");
 
-    private final String name;
-    CountryCode(String name) {
-        this.name = name;
+    private final String countryName;
+    CountryCode(String countryName) {
+        this.countryName = countryName;
     }
 
 }

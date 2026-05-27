@@ -10,6 +10,8 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Coach {
     @EqualsAndHashCode.Include
     @Builder.Default
@@ -18,7 +20,7 @@ public class Coach {
     private String name;
     private String surname;
     private String nickname;
-    //image
+    private String image;
     private int age;
     private CountryCode nationality;
     private int price;

@@ -9,6 +9,8 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Sponsor {
     @EqualsAndHashCode.Include
     @Builder.Default
@@ -16,6 +18,7 @@ public class Sponsor {
 
     private String name;
     private String description;
+    private String logotype;
     private BusinessLevel level;
     private int budget;
     private String mainProduct;

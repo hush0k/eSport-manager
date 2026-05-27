@@ -11,6 +11,8 @@ import java.util.ArrayList;
 @Setter
 @ToString
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Organizer {
     @Builder.Default
@@ -18,8 +20,7 @@ public class Organizer {
     private String id = IdGenerator.generateId("organizer");
 
     private String name;
-    private String slug;
-    // logotype
+    private String logotype;
     private CountryCode country;
     private int reputation;
     private Tier tier;

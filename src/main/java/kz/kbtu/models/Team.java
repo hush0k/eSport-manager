@@ -12,6 +12,8 @@ import java.util.ArrayList;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Team {
     @Builder.Default
     @EqualsAndHashCode.Include
@@ -20,7 +22,7 @@ public class Team {
     private String name;
     private String surname;
     private String slug;
-    //Logotype
+    private String logotype;
     private int points;
     private Tier tier;
     private int foundedYear;

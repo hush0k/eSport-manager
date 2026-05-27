@@ -7,6 +7,8 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class MicroskillsPlayer {
     private int crosshairPlacement;
     private int sprayControl;

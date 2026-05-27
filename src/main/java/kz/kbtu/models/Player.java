@@ -2,10 +2,7 @@ package kz.kbtu.models;
 
 import kz.kbtu.common.generators.IdGenerator;
 import kz.kbtu.enums.*;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +13,8 @@ import java.util.Map;
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Player {
     @Builder.Default
     @EqualsAndHashCode.Include
@@ -24,7 +23,7 @@ public class Player {
     private String name;
     private String surname;
     private String nickname;
-    // image
+    private String image;
     private int age;
     private CountryCode nationality;
     private Gender gender;

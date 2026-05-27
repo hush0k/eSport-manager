@@ -7,6 +7,8 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CoachSkills {
     private int pragmatism;
     private int tacticalKnowledge;

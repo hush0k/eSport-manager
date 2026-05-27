@@ -7,6 +7,8 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class MacroskillsPlayer {
     private int morale;
     private int stamina;

@@ -24,6 +24,7 @@ public class Player {
     private String name;
     private String surname;
     private String nickname;
+    // image
     private int age;
     private CountryCode nationality;
     private Gender gender;

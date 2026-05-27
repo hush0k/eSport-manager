@@ -11,13 +11,10 @@ import java.util.ArrayList;
 @Setter
 @ToString
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Organizer {
-    @Builder.Default
     @EqualsAndHashCode.Include
-    private String id = IdGenerator.generateId("organizer");
+    private String id;
 
     private String name;
     private String logotype;

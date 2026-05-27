@@ -10,12 +10,9 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class Coach {
     @EqualsAndHashCode.Include
-    @Builder.Default
-    private String id = IdGenerator.generateId("coach");
+    private String id;
 
     private String name;
     private String surname;

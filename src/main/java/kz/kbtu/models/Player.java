@@ -1,6 +1,5 @@
 package kz.kbtu.models;
 
-import kz.kbtu.common.generators.IdGenerator;
 import kz.kbtu.enums.*;
 import lombok.*;
 
@@ -13,13 +12,9 @@ import java.util.Map;
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
 public class Player {
-    @Builder.Default
     @EqualsAndHashCode.Include
-    private final String id = IdGenerator.generateId("player");
-
+    private String id;
     private String name;
     private String surname;
     private String nickname;

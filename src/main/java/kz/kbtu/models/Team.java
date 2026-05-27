@@ -1,6 +1,5 @@
 package kz.kbtu.models;
 
-import kz.kbtu.common.generators.IdGenerator;
 import kz.kbtu.enums.CountryCode;
 import kz.kbtu.enums.Tier;
 import lombok.*;
@@ -12,12 +11,9 @@ import java.util.ArrayList;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class Team {
-    @Builder.Default
     @EqualsAndHashCode.Include
-    private String id = IdGenerator.generateId("team");
+    private String id;
 
     private String name;
     private String surname;

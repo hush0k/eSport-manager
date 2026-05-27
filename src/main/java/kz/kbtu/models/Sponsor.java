@@ -1,6 +1,5 @@
 package kz.kbtu.models;
 
-import kz.kbtu.common.generators.IdGenerator;
 import kz.kbtu.enums.BusinessLevel;
 import lombok.*;
 
@@ -9,12 +8,9 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class Sponsor {
     @EqualsAndHashCode.Include
-    @Builder.Default
-    private String id = IdGenerator.generateId("sponsor");
+    private String id;
 
     private String name;
     private String description;
